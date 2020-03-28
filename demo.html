@@ -16,8 +16,8 @@ body { max-width: 10em; margin: 1em auto; font-size: 2em; }
 
 <!-- Optional buttons -->
 <div style="position: fixed; right: 0.5em; top: 50%; margin-top: -3em">
-<button type="button" style="display: block; min-width: 50px; min-height: 50px;" onclick="changeStep(-1);">⬆️</button>
-<button type="button" style="display: block; min-width: 50px; min-height: 50px;" onclick="changeStep(1);">⬇️</button>
+<button type="button" style="display: block; min-width: 50px; min-height: 50px; font-size: 100%;" onclick="changeStep(-1);">⬆️</button>
+<button type="button" style="display: block; min-width: 50px; min-height: 50px; font-size: 100%;" onclick="changeStep(1);">⬇️</button>
 </div>
 
 <script>function changeStep(e){var t=-1;steps.forEach(function(e,n){if(e.classList.contains("active"))return t=n,!1});var n=t+e;n<0?n=steps.length-1:n==steps.length&&(n=0),steps.forEach(function(e,t){if(e.classList.remove("active"),t===n)return e.classList.add("active"),!1})}var steps=document.querySelectorAll(".step");window.addEventListener("keydown",function(e){e.keyCode>36&&e.keyCode<41&&e.preventDefault(),38==e.keyCode||37==e.keyCode?changeStep(-1):40!=e.keyCode&&39!=e.keyCode||changeStep(1)});</script>
