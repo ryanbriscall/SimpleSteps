@@ -25,6 +25,7 @@ function changeStep(adjustment)
 }
 
 window.addEventListener('keydown', function (e) {
+  if (e.keyCode > 36 && e.keyCode < 41) { e.preventDefault(); }
   if (e.keyCode == 38 || e.keyCode == 37) { changeStep(-1); }
   else if (e.keyCode == 40 || e.keyCode == 39) { changeStep(1); }
 });
