@@ -50,4 +50,4 @@ Simply copy/paste the code into your page.
 
 ## License
 
-Nextstep is licensed under the MIT, see the `LICENSE` file for more details.
+Licensed under the MIT, see the `LICENSE` file for more details.
